@@ -1,14 +1,14 @@
 // Nautilus
-@import "nautilus/nautilus";
+@import "../nautilus/nautilus";
 
 // Rouge: Syntax Highlighting
-// @import "nautilus/dependencies/rouge/base16";
-@import "nautilus/dependencies/rouge/base16-monokai";
-// @import "nautilus/dependencies/rouge/base16-solarized";
-// @import "nautilus/dependencies/rouge/colorful";
-// @import "nautilus/dependencies/rouge/github";
-// @import "nautilus/dependencies/rouge/monokai";
-// @import "nautilus/dependencies/rouge/thankfuleyes";
+// @import "nautilus/libs/rouge/base16";
+@import "../nautilus/libs/rouge/base16-monokai";
+// @import "nautilus/libs/rouge/base16-solarized";
+// @import "nautilus/libs/rouge/colorful";
+// @import "nautilus/libs/rouge/github";
+// @import "nautilus/libs/rouge/monokai";
+// @import "nautilus/libs/rouge/thankfuleyes";
 
 // Library: SimpleSelect (http://pioul.fr/jquery-simpleselect)
 // @import "nautilus/libs/simpleselect/2.0.0/simpleselect";
@@ -38,7 +38,7 @@ html {
 }
 
 .layout {
-  @include ⌂-container;
+  @include nt-container;
 }
 
 h1 {
@@ -85,14 +85,10 @@ p {
     @include position(fixed, 1em 1em null null);
 
     &:after {
-      @include ⌂-icon(menu, 26, $color-yellowSunglow);
+      @include nt-icon(menu, 26, $color-yellowSunglow);
     }
-
-    @include ⌂-pattern("toggle", "left");
   }
 }
-
-@include ⌂-pattern("navigation", "revealRight");
 
 .navigation {
 
