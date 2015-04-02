@@ -1,0 +1,30 @@
+<% modifiers ||= '' %>
+<% toggles ||= ['toggle'] %>
+
+<div class="toggles <%= modifiers %>">
+
+  <div class="toggles__inner">
+
+    <% toggles.each do | toggle | %>
+
+      <div class="toggles__group">
+
+        <h5 class="toggles__heading">
+          <%= toggle %>
+        </h5>
+
+        <div class="toggles__inputs">
+          <% (2..4).to_a.sample.times do %>
+            <button class="toggles__toggle toggle"><%= (lorem.word).capitalize %></button>
+          <% end %>
+        </div>
+
+      </div>
+
+    <% end %>
+
+  </div>
+
+  <button class="toggles__switch"><span class="inactive">Show Filters +</span><span class="active">Hide Filters -</span></button>
+
+</div>

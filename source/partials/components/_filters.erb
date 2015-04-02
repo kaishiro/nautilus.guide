@@ -1,0 +1,24 @@
+<% modifiers ||= '' %>
+<% heading ||= '' %>
+<% toggles ||= ['toggle'] %>
+
+<div class="toggles <%= modifiers %>">
+  <h5 class="toggles__heading">
+    <%= heading %>
+  </h5>
+
+  <div class="toggles__inputs">
+
+    <% toggles.each do | toggle | %>
+    <div class="toggles__toggle toggle">
+      <select class="toggle__select toggle__select--<%= toggle %>">
+        <option><%= toggle.capitalize %></option>
+        <% (5..10).each do %>
+          <option><%= (lorem.words (1..2).to_a.sample).capitalize %></option>
+        <% end %>
+      </select>
+    </div>
+    <% end %>
+
+  </div>
+</div>

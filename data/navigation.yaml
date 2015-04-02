@@ -1,0 +1,65 @@
+primary:
+  - title: Installation
+    link: '#installation'
+    subnavigation:
+      - title: Versioning
+        link: '#versioning'
+      - title: Downloading
+        link: '#downloading'
+      - title: Dependencies
+        link: '#dependencies'
+      - title: Setup
+        link: '#setup'
+  - title: Usage
+    link: '#usage'
+    subnavigation:
+      - title: Project Organization
+        link: '#project-organization'
+      - title: _nautilus.scss
+        link: '#nautilusscss'
+  - title: Dependencies
+    link: '#dependencies'
+    subnavigation:
+      - title: Bourbon
+        link: '#bourbon'
+      - title: Fontello
+        link: '#fontello'
+      - title: Neat
+        link: '#neat'
+      - title: Rouge
+        link: '#rouge'
+  - title: Mixins
+    link: '#mixins'
+    subnavigation:
+      - title: nt-background
+        link: '#nt-backgrounnd'
+      - title: nt-button
+        link: '#nt-button'
+      - title: nt-clear
+        link: '#nt-clear'
+      - title: nt-container
+        link: '#nt-container'
+      - title: nt-copy
+        link: '#nt-copy'
+      - title: nt-font-face
+        link: '#nt-font-face'
+      - title: nt-font
+        link: '#nt-font'
+      - title: nt-font-weight
+        link: '#nt-font-weight'
+      - title: nt-heading
+        link: '#nt-heading'
+      - title: nt-hide-text
+        link: '#nt-hide-text'
+      - title: nt-hr
+        link: '#nt-hr'
+      - title: nt-icon
+        link: '#nt-icon'
+      - title: nt-layer
+        link: '#nt-layer'
+      - title: nt-max-size
+        link: '#nt-max-size'
+      - title: nt-pattern
+        link: '#nt-pattern'
+      - title: nt-rte
+        link: '#nt-rte'

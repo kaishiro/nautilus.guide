@@ -1,0 +1,41 @@
+<% modifiers ||= "" %>
+<% url ||= "#" %>
+<% image ||= "http://lorempixel.com/800/400/business/#{(1..10).to_a.sample}" %>
+<% heading ||= (lorem.words (2..8).to_a.sample).capitalize %>
+<% timestamp ||= lorem.date %>
+<% copy ||= lorem.sentences 2 %>
+<% name ||= lorem.name %>
+
+<div class="article <%= modifiers%>">
+  <div class="article__content">
+    <a class="article__heading" href="#">
+      <%= heading %>
+    </a>
+    <time class="article__timestamp">
+      <%= timestamp %>
+    </time>
+    <span class="article__author"><%= name %></span>
+    <img class="article__image" src="<%= image %>" />
+    <div class="article__copy">
+      <p>
+        <%= copy %>
+      </p>
+    </div>
+    <div class="article__tags">
+      <ul class="tags">
+        <li class="tags__item">
+          <a class="tags__link" href="#"><%= lorem.word %></a>
+        </li>
+        <li class="tags__item">
+          <a class="tags__link" href="#"><%= lorem.word %></a>
+        </li>
+        <li class="tags__item">
+          <a class="tags__link" href="#"><%= lorem.word %></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="article__share">
+    <%= partial "components/menu--contact" %>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+<% modifiers ||= "" %>
+<% image_width ||= 250 %>
+<% image_height ||= 250 %>
+<% image ||= "http://lorempixel.com/#{image_width}/#{image_height}/business/#{(1..10).to_a.sample}" %>
+<% name ||= lorem.name %>
+<% title ||= (lorem.words (2)).capitalize %>
+<% copy ||= (lorem.sentences 2) %>
+<% cta_link ||= '#' %>
+<% cta_copy ||= '' %>
+
+<div class="profile <%= modifiers%>">
+  <div class="profile__image" style="background-image:url('<%= image %>')"></div>
+  <div class="profile__content">
+    <a class="profile__name" href="#"><%= name %></a>
+    <span class="profile__title"><%= title %></span>
+    <p class="profile__copy">
+      <%= copy %>
+    </p>
+    <a class="profile__cta" href="<%= cta_link %>"><%= cta_copy %></a>
+    <div class="profile__contact">
+      <%= partial "components/menu--contact" %>
+    </div>
+  </div>
+  <button class="profile__toggle" type="button"></button>
+</div>

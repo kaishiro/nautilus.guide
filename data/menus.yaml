@@ -1,0 +1,115 @@
+navigation:
+  - title: Installation
+    link: '#installation'
+    submenu:
+      - title: Versioning
+        link: '#versioning'
+      - title: Downloading
+        link: '#downloading'
+      - title: Dependencies
+        link: '#dependencies'
+      - title: Setup
+        link: '#setup'
+  - title: Usage
+    link: '#usage'
+    submenu:
+      - title: Project Organization
+        link: '#project-organization'
+      - title: _nautilus.scss
+        link: '#nautilusscss'
+  - title: Dependencies
+    link: '#dependencies'
+    submenu:
+      - title: Bourbon
+        link: '#bourbon'
+      - title: Fontello
+        link: '#fontello'
+      - title: Neat
+        link: '#neat'
+      - title: Rouge
+        link: '#rouge'
+  - title: Helpers
+    link: '#helpers'
+    submenu:
+      - title: Mixins
+        link: '#mixins'
+      - title: _animations.scss
+        link: '#animationsscsss'
+      - title: _mixins.scss
+        link: '#mixinsscss'
+      - title: _resets.scss
+        link: '#resetsscss'
+  - title: Mixins
+    link: '#mixins'
+    submenu:
+      - title: Mixins
+        link: '#mixins'
+      - title: _background.scss
+        link: '#backgroundscss'
+      - title: _button.scss
+        link: '#buttonscss'
+      - title: _clear.scss
+        link: '#clearscss'
+      - title: _container.scss
+        link: '#containerscss'
+      - title: _copy.scss
+        link: '#copyscss'
+      - title: _font-face.scss
+        link: '#font-facescss'
+      - title: _font.scss
+        link: '#fontscss'
+      - title: _font-weight.scss
+        link: '#font-weightscss'
+      - title: _heading.scss
+        link: '#headingscss'
+      - title: _hide-text.scss
+        link: '#hide-textscss'
+      - title: _hr.scss
+        link: '#hrscss'
+      - title: _icon.scss
+        link: '#iconscss'
+      - title: _layer.scss
+        link: '#layerscss'
+      - title: _max-size.scss
+        link: '#max-sizescss'
+      - title: _pattern.scss
+        link: '#patternscss'
+      - title: _rte.scss
+        link: '#rtescss'
+  - title: Libs
+    link: '#libs'
+    submenu:
+      - title: SimpleSelect
+        link: '#simpleselect'
+      - title: Slick
+        link: '#slick'
+  - title: Reset
+    link: '#reset'
+    submenu:
+      - title: _block.scss
+        link: '#blockscss'
+      - title: _forms.scss
+        link: '#formsscss'
+      - title: _headings.scss
+        link: '#headingsscss'
+      - title: _inline.scss
+        link: '#inlinescss'
+      - title: _inputs.scss
+        link: '#inputsscss'
+      - title: _lists.scss
+        link: '#listsscss'
+      - title: _media.scss
+        link: '#mediascss'
+      - title: _site.scss
+        link: '#sitescss'
+      - title: _tables.scss
+        link: '#tablesscss'
+  - title: Settings
+    link: '#settings'
+    submenu:
+      - title: _colors.scss
+        link: '#colorsscss'
+      - title: _grid.scss
+        link: '#gridscss'
+      - title: _typography.scss
+        link: '#typographyscss'

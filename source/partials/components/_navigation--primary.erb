@@ -1,0 +1,33 @@
+<% yolo = "primary" %>
+
+<%= yolo %>
+
+<nav class="navigation navigation--primary" role="navigation">
+
+  <div class="navigation__inner">
+    <ul class="navigation__list">
+      <div class="navigation__row">
+        <% data.navigation.send("#{yolo}").each_with_index do | item, index | %>
+        <li class="navigation__item">
+          <a class="navigation__link" href="<%= item.link %>"><span class="navigation__copy"><%= item.title %></span></a>
+          <% if item.subnavigation %>
+            <div class="subnavigation">
+              <div class="subnavigation__inner">
+                <ul class="subnavigation__list">
+                  <div class="subnavigation__row">
+                  <% item.subnavigation.each_with_index do | subitem, index | %> 
+                    <li class="subnavigation__item">
+                      <a class="subnavigation__link" href="<%= subitem.link %>"><span class="subnavigation__copy"><%= subitem.title %></span></a>
+                    </li>
+                  <% end %>
+                  </div>
+                </ul>
+              </div>
+            </div>
+          <% end %>
+        </li>
+        <% end %>
+      </div>
+    </ul>
+  </div>
+</nav>

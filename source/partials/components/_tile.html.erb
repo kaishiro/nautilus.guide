@@ -1,0 +1,37 @@
+<% modifiers ||= "" %>
+<% url ||= "#" %>
+<% background_image ||= "http://lorempixel.com/350/#{(250..300).to_a.sample}/business/#{(1..10).to_a.sample}" %>
+<% image ||= "http://lorempixel.com/350/#{(250..300).to_a.sample}/business/#{(1..10).to_a.sample}" %>
+<% heading ||= (lorem.words (1..2).to_a.sample).capitalize %>
+<% copy ||= lorem.paragraph %>
+<% section ||= 'False' %>
+
+<% if section == 'True' %>
+<section class="tile <%= modifiers%>" style="background-image:url('<%= background_image %>');">
+<% else %>
+<div class="tile <%= modifiers%>" style="background-image:url('<%= background_image %>');">
+<% end %>
+  <%= image_tag image, :class => 'tile__image' %>
+  <div class="tile__content">
+    <h4 class="tile__heading">
+      <%= heading %>
+    </h4>
+    <div class="tile__copy">
+      <p>
+        <%= copy %>
+      </p>
+    </div>
+
+    <div class="tile__share">
+      <%= partial "components/menu--contact" %>
+    </div>
+
+    <button class="tile__cta">Download Case Study</button>
+
+  </div>
+  <a class="tile__link" href="<%= url %>"></a>
+<% if section == 'True' %>
+</section>
+<% else %>
+</div>
+<% end %>
